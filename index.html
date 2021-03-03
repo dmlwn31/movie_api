@@ -7,7 +7,14 @@
     <title>Movie APP</title>
   </head>
   <body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="/movie_api/plugin/lightslider.css" />
     <link rel="stylesheet" href="/movie_api/css/style.css" />
+    <link rel="stylesheet" href="/movie_api/css/media.css" />
     <header>
       <div class="gnb">
         <div class="logo">
@@ -17,39 +24,81 @@
         </div>
         <div class="nav">
           <ul class="navTit">
-            <li><a href="/movie_api/index.html">홈</a></li>
-            <li><a href="#">최신영화</a></li>
-            <li><a href="#">인기영화</a></li>
+            <li><a href="/movie_api/index.html">HOME</a></li>
+            <li><a href="#" id="recentBtn">RECENT</a></li>
+            <li><a href="#">POPULAR</a></li>
           </ul>
+          <div class="mNavSec">
+            <div class="mIcon">
+              <span><i class="fa fa-bars"></i></span>
+            </div>
+            <div class="mNavSlider">
+              <ul class="mNavTit">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">RECENT</a></li>
+                <li><a href="#">POPULAR</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
     <div class="mainBody">
-      <div class="search-box">
+      <div class="search-box scrollBox">
         <input type="text" / class="searchInput">
         <button type="button" class="sendBtn">검색</button>
       </div>
-    </div>
-    <div class="loading">
-      <img src="/movie_api/img/loading.gif" alt="" />
-    </div>
-    <div class="container clear"></div>
-    <!-- end of container -->
 
-    <div class="numContainer">
-      <div class="numBtns">
-        <button type="button" class="prev">prev</button>
-        <button type="button" class="pageNum" value="1">1</button>
-        <button type="button" class="pageNum" value="2">2</button>
-        <button type="button" class="pageNum" value="3">3</button>
-        <button type="button" class="pageNum" value="4">4</button>
-        <button type="button" class="pageNum" value="5">5</button>
-        <button type="button" class="next">next</button>
+      <div class="containerBox">
+        <div class="recentTit">
+          <h1>RECENT</h1>
+        </div>
+        <div class="loading">
+          <img src="/movie_api/img/loading.gif" alt="" />
+        </div>
+        <div class="container clear"></div>
+        <!-- end of container -->
+
+        <div class="numContainer">
+          <div class="numBtns">
+            <button type="button" class="prev arrow">prev</button>
+            <button type="button" class="pageNum" value="1">1</button>
+            <button type="button" class="pageNum" value="2">2</button>
+            <button type="button" class="pageNum" value="3">3</button>
+            <button type="button" class="pageNum" value="4">4</button>
+            <button type="button" class="pageNum" value="5">5</button>
+            <button type="button" class="next arrow">next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="genre-section">
+      <div class="action">
+        <div class="action-contents" id="actionSlide">
+          <!-- <div class="slide-box">
+            <div>
+              <img src="/movie.api/img/new-arrival-2.jpg" alt="" />
+              <div class="slide-txt">
+                <h3>Movie Title</h3>
+                <p class="rating">Ration : 8.0</p>
+              </div>
+              <a href="#">Details</a>
+            </div>
+          </div>-->
+          <!-- end of slide-box -->
+        </div>
+      </div>
+      <div class="romance">
+        <div class="romance-contents" id="romanceSlide"></div>
+      </div>
+      <div class="drama">
+        <div class="drama-contents" id="dramaSlide"></div>
       </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script>
       $(function () {
         function searchMovie() {
@@ -76,5 +125,8 @@
       });
     </script>
     <script src="/movie_api/js/recent.js"></script>
+    <script src="/movie_api/js/custom.js"></script>
+    <script src="/movie_api/js/genre.js"></script>
+    <script src="/movie_api/plugin/lightslider.js"></script>
   </body>
 </html>
