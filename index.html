@@ -7,13 +7,46 @@
     <title>Movie APP</title>
   </head>
   <body>
-    <div class="search-box">
-      <input type="text" / class="searchInput"><button
-        type="button"
-        class="sendBtn"
-      >
-        검색
-      </button>
+    <link rel="stylesheet" href="/movie_api/css/style.css" />
+    <header>
+      <div class="gnb">
+        <div class="logo">
+          <a href="/movie_api/index.html"
+            ><img src="/movie_api/img/mainlogo.png" alt=""
+          /></a>
+        </div>
+        <div class="nav">
+          <ul class="navTit">
+            <li><a href="/movie_api/index.html">홈</a></li>
+            <li><a href="#">최신영화</a></li>
+            <li><a href="#">인기영화</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="mainBody">
+      <div class="search-box">
+        <input type="text" / class="searchInput">
+        <button type="button" class="sendBtn">검색</button>
+      </div>
+    </div>
+    <div class="loading">
+      <img src="/movie_api/img/loading.gif" alt="" />
+    </div>
+    <div class="container clear"></div>
+    <!-- end of container -->
+
+    <div class="numContainer">
+      <div class="numBtns">
+        <button type="button" class="prev">prev</button>
+        <button type="button" class="pageNum" value="1">1</button>
+        <button type="button" class="pageNum" value="2">2</button>
+        <button type="button" class="pageNum" value="3">3</button>
+        <button type="button" class="pageNum" value="4">4</button>
+        <button type="button" class="pageNum" value="5">5</button>
+        <button type="button" class="next">next</button>
+      </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -42,5 +75,6 @@
         });
       });
     </script>
+    <script src="/movie_api/js/recent.js"></script>
   </body>
 </html>
