@@ -5,7 +5,7 @@
 @media screen and (max-width:1000px){
   .gnb .nav{margin-left:0%;}
   .recent-movie-wrap{float:left; width:25%;}
-  .containerBox .numContainer{margin-left:40%;}
+
 }
 @media screen and (max-width:850px){
   .movie_box .titBox h2{font-size:30px;}
@@ -15,7 +15,7 @@
   .gnb .nav .navTit li{margin-left:10%;}
   .gnb .logo img{width:250px; height:auto;}
   .recent-movie-wrap{float:left; width:33.33%;}
-  .containerBox .numContainer{margin-left:33%;}
+
 }
 
 @media screen and (max-width:700px){
@@ -29,14 +29,14 @@
   .gnb .nav .navTit li:nth-child(1){display:none;}
   .mainBody .search-box{margin-left:15%;padding-top:300px; padding-bottom:200px;}
   .recent-movie-wrap{float:left; width:50%;}
-  .containerBox .numContainer{margin-left:25%;}
   .wrap{margin-top:25%;}
   .movie_box .titBox h2{margin-left:5px;}
   .movie_box .titBox ul{margin-left:5px; font-size:14px; margin-top:25px;}
 }
 
-@media screen and (max-width:500px){
-    .mainBody .search-box{margin-left:10%;padding-top:300px; padding-bottom:250px;}
+@media screen and (max-width:450px){
+  
+    .mainBody .search-box{margin-left:20%;padding-top:300px; padding-bottom:250px;}
     .mainBody .search-box .searchInput{width:250px; height:40px;}
     .mainBody .search-box .sendBtn{width:250px; height:40px;}
     .wrap{margin-top:40%;}
@@ -46,4 +46,5 @@
     .gnb .logo img{width:150px; height:auto; }
     .gnb .logo, .mLogo{ padding-top:10px;}
     .gnb .nav .navTit{display:none;}
+    .mNavSec{display:block;}
 }

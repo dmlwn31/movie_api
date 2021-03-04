@@ -14,7 +14,9 @@ $(function(){
                                  <h3>${data.data.movies[i].title}</h3>
                                  <p class="rating">Ration : ${data.data.movies[i].rating}</p>
                                </div>
-                               <a href="/movie_api/detail.html?id=${data.data.movies[i].id}">Details</a>
+                               <div class="genreDetail">
+                                <a href="/movie_api/detail.html?id=${data.data.movies[i].id}">Details</a>
+                               </div>
                              </div>
                            </div>`;
                            getGenres += genreHTML;

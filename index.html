@@ -24,22 +24,22 @@
         </div>
         <div class="nav">
           <ul class="navTit">
-            <li><a href="/movie_api/index.html">HOME</a></li>
+            <li><a href="#" id="homeBtn">HOME</a></li>
             <li><a href="#" id="recentBtn">RECENT</a></li>
-            <li><a href="#">POPULAR</a></li>
+            <li><a href="#" id="genreBtn">GENRE</a></li>
           </ul>
-          <div class="mNavSec">
-            <div class="mIcon">
-              <span><i class="fa fa-bars"></i></span>
-            </div>
-            <div class="mNavSlider">
-              <ul class="mNavTit">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">RECENT</a></li>
-                <li><a href="#">POPULAR</a></li>
-              </ul>
-            </div>
-          </div>
+        </div>
+      </div>
+      <div class="mNavSec">
+        <div class="mIcon">
+          <span><i class="fa fa-bars"></i></span>
+        </div>
+        <div class="mNavSlider">
+          <ul class="mNavTit">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">RECENT</a></li>
+            <li><a href="#">GENRE </a></li>
+          </ul>
         </div>
       </div>
     </header>
@@ -72,28 +72,51 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="genre-section">
-      <div class="action">
-        <div class="action-contents" id="actionSlide">
-          <!-- <div class="slide-box">
+
+      <div class="genre-section">
+        <div class="genreTit">
+          <h1>GENRE</h1>
+        </div>
+        <!-- ----------------------------- -->
+        <ul class="tabs">
+          <li class="tablinks" id="allBtn">All</li>
+          <li class="tablinks" onclick="openCity(event, 'action')">action</li>
+          <li class="tablinks" onclick="openCity(event, 'romance')">romance</li>
+          <li class="tablinks" onclick="openCity(event, 'drama')">drama</li>
+        </ul>
+        <!-- --------------------------------------- -->
+        <div class="genreBox">
+          <div id="action" class="genreSubBox" class="tabcontent">
+            <div class="genreSubTit">
+              <h4>ACTION</h4>
+            </div>
+            <div class="action-contents" id="actionSlide">
+              <!-- <div class="slide-box">
             <div>
               <img src="/movie.api/img/new-arrival-2.jpg" alt="" />
               <div class="slide-txt">
                 <h3>Movie Title</h3>
                 <p class="rating">Ration : 8.0</p>
               </div>
-              <a href="#">Details</a>
+              <a href="#" class="genreDetail">Details</a>
             </div>
           </div>-->
-          <!-- end of slide-box -->
+              <!-- end of slide-box -->
+            </div>
+          </div>
+          <div id="romance" class="genreSubBox">
+            <div class="genreSubTit">
+              <h4>ROMANCE</h4>
+            </div>
+            <div class="romance-contents" id="romanceSlide"></div>
+          </div>
+          <div id="drama" class="genreSubBox">
+            <div class="genreSubTit">
+              <h4>DRAMA</h4>
+            </div>
+            <div class="drama-contents" id="dramaSlide"></div>
+          </div>
         </div>
-      </div>
-      <div class="romance">
-        <div class="romance-contents" id="romanceSlide"></div>
-      </div>
-      <div class="drama">
-        <div class="drama-contents" id="dramaSlide"></div>
       </div>
     </div>
 

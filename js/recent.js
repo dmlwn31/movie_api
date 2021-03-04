@@ -32,6 +32,7 @@ $(function(){
     //console.log(typeof(currentPage));
   }
 
+  //컨테이너 섹션 페이지 넘버 
   $(".numBtns button.pageNum").click(function(){
     let btnValue = Number($(this).attr('value'));
     //console.log(btnValue);

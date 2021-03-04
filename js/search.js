@@ -1,4 +1,3 @@
-
 $(function () {
   let searchValue = document.location.href.split("=")[1];
   let decodeValue = decodeURI(searchValue);
@@ -15,8 +14,8 @@ $(function () {
       //console.log(obj);
       //console.log(obj.items);
 
-      if (obj.items.lenghth == 0) {
-        alert("데이터가 없습니다.");
+      if (obj.items.length == 0) {
+        alert('데이터가 없습니다.');
         location.href = "/movie_api/index.html";
       }
 
