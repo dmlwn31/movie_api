@@ -4,23 +4,32 @@
 @media screen and (max-width:1000px){
   .gnb .nav{margin-left:0%;}
   .recent-movie-wrap{float:left; width:25%;}
+  ul.tabs{margin-left:10px;}
 
 }
 @media screen and (max-width:850px){
   .movie_box .titBox h2{font-size:30px;}
+  .genre-section .genreTit h1{width:40%;}
 }
 @media screen and (max-width:810px){
   .gnb .nav{margin-left:20%;}
   .gnb .nav .navTit li{margin-left:10%;}
   .gnb .logo img{width:250px; height:auto;}
   .recent-movie-wrap{float:left; width:33.33%;}
+  
 
 }
-
+@media screen and (max-width:750px){
+  .genre-section .genreTit h1{width:30%;}
+}
 @media screen and (max-width:700px){
   .mainBody .search-box{margin-left:25%;padding-top:300px; padding-bottom:250px;}
   .gnb .nav .navTit li{font-size:14px;}
   .movie_box .titBox h2{font-size:20px;}
+  .go{display:none;}
+}
+@media screen and (max-width:650px){
+  .genre-section .genreTit h1{width:20%;}
 }
 @media screen and (max-width:600px){
   .gnb .logo img{width:200px; height:auto;}
@@ -29,13 +38,20 @@
   .recent-movie-wrap{float:left; width:50%;}
   .movie_box .titBox h2{margin-left:5px;}
   .movie_box .titBox ul{margin-left:5px; font-size:14px; margin-top:25px;}
+  .containerBox .numContainer{margin-left:-10%;}
+}
+@media screen and (max-width:550px){
+  .genre-section .genreTit{display:block;}
 }
 
 @media screen and (max-width:450px){
   
-    .mainBody .search-box{margin-left:20%;padding-top:300px; padding-bottom:250px;}
+  .mNavSec .mIcon{margin-left:80%;}
+    .mainBody .search-box{margin-left:12%;padding-top:300px; padding-bottom:250px;}
     .mainBody .search-box .searchInput{width:250px; height:40px;}
     .mainBody .search-box .sendBtn{width:250px; height:40px;}
+    ul.tabs{margin-left:0; font-size:13px;}
+    ul.tabs li{padding:20px;}
     .movie_box{display:block;}
     .movie_box img{width:100%; height:auto;}
     .containerBox .numContainer{margin-left:7%;}
@@ -43,4 +59,7 @@
     .gnb .logo, .mLogo{ padding-top:10px;}
     .gnb .nav .navTit{display:none;}
     .mNavSec{display:block;}
+    footer ul{margin-left:-36px;}
+    footer ul li{font-size:13px;}
+    .containerBox .numContainer .numBtns{margin-left:0;}
 }

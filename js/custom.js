@@ -23,6 +23,21 @@ $(".go").click(function () {
   $("html").animate({ scrollTop: offset.top }, 400);
 });
 
+$("#mHome").click(function () {
+  var offset = $(".search-box").offset(); 
+  $("html").animate({ scrollTop: offset.top }, 400);
+});
+
+$("#mRecent").click(function () {
+  var offset = $(".containerBox").offset(); 
+  $("html").animate({ scrollTop: offset.top }, 400);
+});
+
+$("#mGenre").click(function () {
+  var offset = $(".genre-section").offset(); 
+  $("html").animate({ scrollTop: offset.top }, 400);
+});
+
 
 
 
