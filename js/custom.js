@@ -15,15 +15,14 @@ $("#homeBtn").click(function () {
 
 $("#genreBtn").click(function () {
   var offset = $(".genre-section").offset(); 
-
   $("html").animate({ scrollTop: offset.top }, 400);
 });
 
-$("#allBtn").click(function () {
-  var offset = $(".genre-section").offset(); 
-
-  $("html").animate({ scrollTop: offset.top }, 1);
+$(".go").click(function () {
+  var offset = $(".containerBox").offset(); 
+  $("html").animate({ scrollTop: offset.top }, 400);
 });
+
 
 
 
@@ -50,18 +49,41 @@ let mobileMenu = function(){
 mobileMenu();
 
 
-// 장르별 탭 설정, active클래스 
-// function openCity(evt, cityName) {
-//   var i, tabcontent, tablinks;
-//   tabcontent = document.getElementsByClassName("genreSubBox");
-//   for (i = 0; i < tabcontent.length; i++) {
-//     tabcontent[i].style.display = "none";
-//   }
-//   tablinks = document.getElementsByClassName("tablinks");
-//   for (i = 0; i < tablinks.length; i++) {
-//     tablinks[i].className = tablinks[i].className.replace("active", "");
-//   }
-//   document.getElementById(cityName).style.display = "block";
-//   evt.currentTarget.className += "active";
-// }
+// allBtn 전체 보이기 기능
+$(document).ready(function() {
+
+  $("#allBtn").click(function() {
+
+      $(".genreSubBox").show(); 
+      // $(this).hide('fast'); 
+  });
+
+});
+
+// 장르별 탭 설정, on클래스
+$(".tablinks").click(function(){
+  let index = $(this).index();
+ 
+  $(".genreSubBox").hide();
+  $(".genreSubBox").eq(index-1).show();
+
+  $(".tablinks").removeClass("remove");
+  $(".tablinks").eq(index).addClass("remove");
+
+  
+});
+
+
+jQuery(function($){
+  $(window).scroll(function () {
+    if($(window).scrollTop() == 0) {
+     $('.go').show(300);
+    } else {
+     $('.go').hide();
+    }
+   });
+  
+  });
+
+
 

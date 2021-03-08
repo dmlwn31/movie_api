@@ -46,8 +46,11 @@
 
     <div class="mainBody">
       <div class="search-box scrollBox">
-        <input type="text" / class="searchInput">
+        <input type="text" class="searchInput" />
         <button type="button" class="sendBtn">검색</button>
+      </div>
+      <div class="go">
+        <a href="#"><img src="/movie_api/img/go.png" alt="" /></a>
       </div>
 
       <div class="containerBox">
@@ -76,14 +79,15 @@
       <div class="genre-section">
         <div class="genreTit">
           <h1>GENRE</h1>
+
+          <!-- ----------------------------- -->
+          <ul class="tabs">
+            <li class="tablinks remove" id="allBtn">All</li>
+            <li class="tablinks">Action</li>
+            <li class="tablinks">Romance</li>
+            <li class="tablinks">Drama</li>
+          </ul>
         </div>
-        <!-- ----------------------------- -->
-        <ul class="tabs">
-          <li class="tablinks" id="allBtn">All</li>
-          <li class="tablinks" onclick="openCity(event, 'action')">action</li>
-          <li class="tablinks" onclick="openCity(event, 'romance')">romance</li>
-          <li class="tablinks" onclick="openCity(event, 'drama')">drama</li>
-        </ul>
         <!-- --------------------------------------- -->
         <div class="genreBox">
           <div id="action" class="genreSubBox" class="tabcontent">
@@ -119,6 +123,15 @@
         </div>
       </div>
     </div>
+    <!-- end of body -->
+    <footer>
+      <ul>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보취급방칭</a></li>
+        <li><a href="#">사이트맵</a></li>
+      </ul>
+      <p>Copyright&copy2021.dmlwn31 All right reserved.</p>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 

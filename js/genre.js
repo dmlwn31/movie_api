@@ -9,7 +9,7 @@ $(function(){
         for(let i = 0; i< data.data.movies.length; i++){
           let genreHTML =  `<div class="slide-box">
                              <div>
-                               <img src="${data.data.movies[i].medium_cover_image}" alt="" />
+                               <img src="${data.data.movies[i].medium_cover_image}" alt=""  onError="this.src='/movie_api/img/noimage.jpg';"/>
                                <div class="slide-txt">
                                  <h3>${data.data.movies[i].title}</h3>
                                  <p class="rating">Ration : ${data.data.movies[i].rating}</p>
@@ -24,7 +24,7 @@ $(function(){
         $(box).append(getGenres);
   
         $(slideID).lightSlider({
-          item:5,
+         item:5,
          slideMove:1,
          auto:true,
          loop:true,

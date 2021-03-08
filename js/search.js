@@ -15,7 +15,7 @@ $(function () {
       //console.log(obj.items);
 
       if (obj.items.length == 0) {
-        alert('데이터가 없습니다.');
+        alert('검색된 자료가 없습니다.');
         location.href = "/movie_api/index.html";
       }
 
@@ -40,3 +40,26 @@ $(function () {
   });
 });
 
+$(function () {
+  function searchMovie() {
+    let searchResult = $(".searchInput").val();
+    if (!searchResult) {
+      alert("검색어를 입력해 주세요.");
+      return false;
+    }
+
+    location.href = "/movie_api/search.html?key=" + searchResult;
+  }
+
+  $(".sendBtn").click(function () {
+    searchMovie();
+  });
+
+  //press enter
+  document.addEventListener("keydown", function (e) {
+    const keyCode = e.keyCode;
+    if (keyCode == 13) {
+      searchMovie();
+    }
+  });
+});
